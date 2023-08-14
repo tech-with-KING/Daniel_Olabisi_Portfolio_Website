@@ -4,8 +4,7 @@ import img from './WhatsApp Image 2023-08-13 at 5.24.05 PM.jpeg'
 import { Link } from 'react-router-dom';
 const GlassyProfile = () => {
     const text = `Daniel Olabisi is a graduate of the Federal University of Technology with a degree in Telecommunication Engineering. His journey in the field of engineering provided him with the opportunity to intern with an Internet Service Provider, where he discovered his passion for problem-solving and providing solutions to clients.
-    Currently, Daniel is dedicated to advancing his skills in the field of data analytics through comprehensive soft and technical training with ALX Africa. 
-  
+    Currently, Daniel is dedicated to 
 `
   return (
     <div className="glassy-profile">
