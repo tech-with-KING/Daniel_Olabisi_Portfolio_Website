@@ -1,21 +1,17 @@
 import React from 'react';
 import './portfolio.css'
 const PortfolioPage = () => {
-  const name = 'Phebean Adeniji';
-  const message = `
-  As a passionate software engineer and mathematician, I thrive on the exhilarating intersection of logic and creativity. With a solid foundation in mathematics, I approach software development as an elegant puzzle that demands both analytical thinking and innovative solutions. My journey into this field began with my fascination for algorithms and patterns, which eventually led me to pursue degrees in both mathematics and computer science.
-
-Throughout my career, I've had the privilege of working on diverse projects that have sharpened my skills in various technologies. From crafting efficient algorithms to developing user-friendly interfaces, I'm committed to creating robust software solutions that marry precision with practicality. The ever-evolving landscape of technology exhilarates me, and I'm constantly driven to learn new languages, frameworks, and paradigms to stay at the forefront of innovation.
-
-In addition to my technical pursuits, I believe in effective communication and collaboration as essential pillars of successful software engineering. My experience collaborating with cross-functional teams has taught me the value of combining technical expertise with clear communication to deliver exceptional results.
-
-When I'm not immersed in code, you'll find me exploring the world of abstract mathematics, finding beauty in elegant theorems and proofs. This love for both software engineering and mathematics fuels my determination to tackle complex challenges and contribute meaningfully to the world of technology.
-
-Feel free to customize and expand upon this text to reflect your personal experiences and accomplishments accurately.
+  const name = 'Daniel Olabisi';
+  const message = `Daniel Olabisi is a 
+  Proficient in data analysis, with the ability to extract valuable insights from data sets.
+An enthusiastic learner with a commitment to professional growth and adaptability.
+Skilled in data visualization and presentation, translating complex data into clear, actionable reports
+Strong problem-solving and critical thinking abilities, contributing to effective decision-making.
 `
   const videoUrl = 'https://www.youtube.com/embed/your-video-id';
   const cvUrl = 'link-to-your-cv';
   const projectPdfUrl = 'link-to-your-project-pdf';
+  const linkedInUrl ='https://docs.google.com/document/d/1hwHiT_Owq2RzMvsY05Ki8pTA9f0VDi-44IkmI-AqzWA/edit?usp=sharing'
 
   const handleScrollTo = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
@@ -62,6 +58,8 @@ and it can help students learn more effectively.
         <div className="">
                <h1 className='section-title'>Pitch Slides Deck</h1>
                <GoogleSlides />
+               <h1 className='section-title'>Resume</h1>
+               <Cv />
            </div>
            <h1 className='portfols'>Contributors :</h1>
            
@@ -95,3 +93,31 @@ const GoogleSlides = () => {
   );
 };
 
+
+const Cv = () => {
+  const googleSlidesEmbedUrl = 'https://docs.google.com/presentation/d/1uzMGw-mBBkNuHwgzNz8ImnT4tE1Mjs-BYX2H86PBrwE/embed';
+  const linkedInUrl ='https://docs.google.com/document/d/1hwHiT_Owq2RzMvsY05Ki8pTA9f0VDi-44IkmI-AqzWA/edit?usp=sharing/embed'
+  return (
+    <div className="google-slides-container">
+      <iframe
+        src={linkedInUrl}
+        title="Cv"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const LinkedIn = () => {
+  const googleSlidesEmbedUrl = 'https://docs.google.com/presentation/d/1uzMGw-mBBkNuHwgzNz8ImnT4tE1Mjs-BYX2H86PBrwE/embed';
+  const linkedInUrl ='https://www.linkedin.com/in/dee-analyst'
+  return (
+    <div className="google-slides-container">
+      <iframe
+        src={linkedInUrl}
+        title="LinkedIn"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
